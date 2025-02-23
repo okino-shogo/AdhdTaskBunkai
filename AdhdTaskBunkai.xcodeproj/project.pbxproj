@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E2819B42D6867B000BAAA25 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2819B32D6867B000BAAA25 /* GoogleMobileAds */; };
+		5E2819B72D68680200BAAA25 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2819B62D68680200BAAA25 /* GoogleMaps */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E26FBA432D63143700EB5A14 /* AdhdTaskBunkai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdhdTaskBunkai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5E2819B92D68686000BAAA25 /* Exceptions for "AdhdTaskBunkai" folder in "AdhdTaskBunkai" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E26FBA422D63143700EB5A14 /* AdhdTaskBunkai */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E26FBA452D63143700EB5A14 /* AdhdTaskBunkai */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5E2819B92D68686000BAAA25 /* Exceptions for "AdhdTaskBunkai" folder in "AdhdTaskBunkai" target */,
+			);
 			path = AdhdTaskBunkai;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2819B72D68680200BAAA25 /* GoogleMaps in Frameworks */,
+				5E2819B42D6867B000BAAA25 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = AdhdTaskBunkai;
 			packageProductDependencies = (
+				5E2819B32D6867B000BAAA25 /* GoogleMobileAds */,
+				5E2819B62D68680200BAAA25 /* GoogleMaps */,
 			);
 			productName = AdhdTaskBunkai;
 			productReference = E26FBA432D63143700EB5A14 /* AdhdTaskBunkai.app */;
@@ -94,6 +116,10 @@
 			);
 			mainGroup = E26FBA3A2D63143700EB5A14;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5E2819B22D6867B000BAAA25 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				5E2819B52D68680200BAAA25 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E26FBA442D63143700EB5A14 /* Products */;
 			projectDirPath = "";
@@ -252,12 +278,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AdhdTaskBunkai/Preview Content\"";
-				DEVELOPMENT_TEAM = NPY2X4BWTQ;
+				DEVELOPMENT_TEAM = 2QN778NTHT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AdhdTaskBunkai/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "タスクの場所を設定し、移動時間を計算するために位置情報を使用します。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "タスクの場所を設定するために位置情報を使用します。";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "このアプリは、より関連性の高い広告を表示するために、デバイスの広告識別子を使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -265,7 +295,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.okino.shogo.AdhdTaskBunkai;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.zonehisa.AdhdTaskBunkai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -281,12 +311,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AdhdTaskBunkai/Preview Content\"";
-				DEVELOPMENT_TEAM = NPY2X4BWTQ;
+				DEVELOPMENT_TEAM = 2QN778NTHT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AdhdTaskBunkai/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "タスクの場所を設定し、移動時間を計算するために位置情報を使用します。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "タスクの場所を設定するために位置情報を使用します。";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "このアプリは、より関連性の高い広告を表示するために、デバイスの広告識別子を使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.okino.shogo.AdhdTaskBunkai;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.zonehisa.AdhdTaskBunkai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,6 +358,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E2819B22D6867B000BAAA25 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+		5E2819B52D68680200BAAA25 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E2819B32D6867B000BAAA25 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E2819B22D6867B000BAAA25 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		5E2819B62D68680200BAAA25 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E2819B52D68680200BAAA25 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E26FBA3B2D63143700EB5A14 /* Project object */;
 }
